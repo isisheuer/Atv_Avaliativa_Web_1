@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isis Currículo</title>
     <style>
-    #Experiência{
+    #Experiência, #cabeçalho, #Formação, #grade{
         padding: 20px;
-        margin: 20px; 
+        margin: 20px auto; 
         font-family: 'Arial', sans-serif;
         font-size: 18px;
         color: #333;
@@ -15,44 +15,15 @@
         background-color: #f0f8ff;
         text-align: left;
         border-radius: 10px;
-    }#cabeçalho{
-        padding: 20px;
-        margin: 20px;
-        font-family: 'Arial', sans-serif;
-        font-size: 18px;
-        color: #333;
-        max-width: 1000px;
-        background-color: #f0f8ff;
-        text-align: left;
-        border-radius: 10px;
-    }#Formação{
-        padding: 20px;
-        margin: 20px;
-        font-family: 'Arial', sans-serif;
-        font-size: 18px;
-        color: #333;
-        max-width: 1000px;
-        background-color: #f0f8ff;
-        text-align: left;
-        border-radius: 10px;
-    }#grade{
-        padding: 20px;
-        margin: 20px;
-        font-family: 'Arial', sans-serif;
-        font-size: 18px;
-        color: #333;
-        max-width: 1000px;
-        background-color: #f0f8ff;
-        text-align: left;
-        border-radius: 10px;
-    }table, td, th{
+   
+    }#horario, td, th{
         border: 1px, solid #a0cfe1;
         border-collapse: collapse;
         padding: 20px;
-        margin: 20px;
+        margin: 20px auto;
         font-family: 'Arial', sans-serif;
         font-size: 15px;
-        width: 1000;
+        max-width: 1000;
         background-color: #f0f8ff;
         border-radius: 10px;
         overflow: hidden;
@@ -65,10 +36,28 @@
         height: 200px;
     }mark{
         background-color: rgb(238, 205, 233);
-    }
+
+    }#href, td, th{
+        padding: 20px;
+        margin: 20px auto;
+        border-style: hidden;
+  
+     }
     </style>
 </head>
 <body>
+    <div>
+        <table id="href">
+    <nav>
+        <th><a href="#cabeçalho">Cabeçalho</a></th>
+        <th><a href="#Experiência">Experiência</a></th>
+        <th><a href="#Formação">Formação</a></th>
+        <th><a href="#grade">Grade de Horários</a></th>
+    </nav>
+</table>
+
+    </div>
+
     <div id="cabeçalho">
         <h1><strong>Isis Sarah Vieira Heuer</strong></h1>
         <span>Blumenau, Santa Catarina</span>
@@ -130,7 +119,7 @@
 
 <div>
 
-    <table>
+    <table id="horario">
         <tr>
             <th><mark>Segunda-Feira</mark></th>
             <th><mark>Terça-Feira</mark></th>
